@@ -158,6 +158,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="12-11-2019.cpp" />
+    <ClCompile Include="Board.cpp" />
+    <ClCompile Include="Pion.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Board.h" />
+    <ClInclude Include="Pion.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

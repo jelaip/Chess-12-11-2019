@@ -3,24 +3,33 @@
 
 #include <iostream>
 #include <SFML/Graphics.hpp> 
+#include "Board.h"
 
 int main()
 {
     std::cout << "Hello World!\n";
 	//system("pause");
-	sf::RenderWindow window(sf::VideoMode(800, 800), "SFML_Tuto");
+	sf::RenderWindow window(sf::VideoMode(600, 600), "SFML_Tuto");
 	
 	// Initialise everything below
+	Board* board = new Board(window.getSize().x);
 	
 	// Game loop
 	while (window.isOpen()) {
 		sf::Event event;
 		while (window.pollEvent(event)) { // Process any input event here
-	if (event.type == sf::Event::Closed) {
-		window.close(); }
-} // Update game here
-window.clear(); // Whatever I want to draw goes here
-window.display();
+			if (event.type == sf::Event::Closed) {window.close(); }
+			
+
+
+
+		} // Update game here
+	window.clear(); // Whatever I want to draw goes here
+	for (sf::RectangleShape r : board->caseReel)
+	{
+		window.draw(r);
+	}
+	window.display();
 }
 
 
