@@ -1,7 +1,7 @@
 #include "Knight.h"
 
 
-/*
+
 Knight::Knight(std::string nAsset, std::string chemin, int _x, int _y, bool _black):Pion::Pion(chemin, _x, _y, _black)
 {
 	texture.loadFromFile(path + nAsset);
@@ -52,4 +52,4 @@ std::list<sf::Vector2i>  Knight::caseMove(std::array< std::array<Pion*, 8>, 8> c
 
 Knight::~Knight()
 {
-}*/
+}

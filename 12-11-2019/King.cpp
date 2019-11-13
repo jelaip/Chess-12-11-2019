@@ -1,7 +1,7 @@
 #include "King.h"
 
 
-/*
+
 King::King(std::string nAsset, std::string chemin, int _x, int _y, bool _black):Pion::Pion(chemin, _x, _y, _black)
 {
 	texture.loadFromFile(path + nAsset);
@@ -12,7 +12,7 @@ King::King(std::string nAsset, std::string chemin, int _x, int _y, bool _black):
 King::~King()
 {
 }
-*/
+
 
 std::list<sf::Vector2i>  King::caseMove(std::array< std::array<Pion*, 8>, 8> caseVirtuel) {
 	std::list<sf::Vector2i> m;

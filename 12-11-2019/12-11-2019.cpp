@@ -5,7 +5,7 @@
 #include <SFML/Graphics.hpp> 
 #include "Board.h"
 #include "windows.h"
-
+#include "Joueur.h"
 
 
 int main()
@@ -16,6 +16,9 @@ int main()
 	
 	// Initialise everything below
 	Board* board = new Board(window.getSize().x);
+	bool tourBlack = false;
+	Joueur* j1 = new Joueur(false);
+	Joueur* j2 = new Joueur(true);
 	sf::Vector2i localPosition;
 	// Game loop
 	while (window.isOpen()) {

@@ -17,7 +17,7 @@ std::string GetAssetPath() {
 	return assetPath;
 }
 
-Joueur::Joueur(bool _black)
+Joueur::Joueur(bool _black,Board* baord)
 {
 	black = _black;
 	fillPionList(pionList);
