@@ -4,7 +4,7 @@ class Bishop :
 	public Pion
 {
 public:
-	Bishop(std::string nAsset, std::string chemin);
+	Bishop(std::string nAsset, std::string chemin, int _x, int _y, bool _black);
 	virtual ~Bishop();
 };
 
