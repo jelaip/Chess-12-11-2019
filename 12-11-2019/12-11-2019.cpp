@@ -31,7 +31,7 @@ int main()
 	
 	// Initialise everything below
 	Board* board = new Board(window.getSize().x);
-	
+	sf::Vector2i localPosition;
 	// Game loop
 	while (window.isOpen()) {
 		sf::Event event;
@@ -40,8 +40,12 @@ int main()
 			
 
 
-
 		} // Update game here
+
+		localPosition = sf::Mouse::getPosition(window);
+
+		log(localPosition.x);
+		log(localPosition.y);
 	window.clear(); // Whatever I want to draw goes here
 	for (sf::RectangleShape r : board->caseReel)
 	{

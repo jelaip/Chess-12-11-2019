@@ -1,7 +1,7 @@
 #include "Pawn.h"
 
 
-
+/*
 Pawn::Pawn(std::string nAsset, std::string chemin, int _x, int _y, bool _black) : Pion::Pion (chemin, _x, _y, _black)
 {
 	texture.loadFromFile(path + nAsset);
@@ -11,7 +11,7 @@ Pawn::Pawn(std::string nAsset, std::string chemin, int _x, int _y, bool _black) 
 
 Pawn::~Pawn()
 {
-}
+}*/
 
 std::list<sf::Vector2i>  Pawn::caseMove(std::array< std::array<Pion*, 8>, 8> caseVirtuel) {
 	std::list<sf::Vector2i> m;
