@@ -7,22 +7,7 @@
 #include "windows.h"
 
 
-std::string GetAppPath() 
-{
-	char cExeFilePath[256];
-	GetModuleFileNameA(nullptr, cExeFilePath, 256);
-	std::string exeFilePath = cExeFilePath;
-	int exeNamePos = exeFilePath.find_last_of("\\/");
-	std::string appPath = exeFilePath.substr(0, exeNamePos + 1);
-	return appPath;
-}
 
-std::string GetAssetPath() {
-	std::string assetPath = GetAppPath();
-
-	assetPath = assetPath + "Ressources";
-	return assetPath;
-}
 int main()
 {
     std::cout << "Hello World!\n";
