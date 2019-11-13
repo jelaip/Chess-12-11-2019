@@ -13,6 +13,7 @@ King::~King()
 {
 }
 
+
 std::list<sf::Vector2i>  King::caseMove(std::array< std::array<Pion*, 8>, 8> caseVirtuel) {
 	std::list<sf::Vector2i> m;
 
@@ -48,3 +49,4 @@ std::list<sf::Vector2i>  King::caseMove(std::array< std::array<Pion*, 8>, 8> cas
 
 	return m;
 }
+

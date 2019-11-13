@@ -1,2 +1,15 @@
-﻿  12-11-2019.cpp
-  12-11-2019.vcxproj -> C:\Users\jelai\source\repos\12-11-2019\Debug\12-11-2019.exe
+﻿  Bishop.cpp
+  Joueur.cpp
+  King.cpp
+  Knight.cpp
+  Pawn.cpp
+  Queen.cpp
+  Rook.cpp
+  Génération de code en cours...
+Queen.obj : error LNK2001: symbole externe non rÚsolu "public: __thiscall Pion::~Pion(void)" (??1Pion@@QAE@XZ)
+Rook.obj : error LNK2001: symbole externe non rÚsolu "public: __thiscall Pion::~Pion(void)" (??1Pion@@QAE@XZ)
+Bishop.obj : error LNK2001: symbole externe non rÚsolu "public: __thiscall Pion::~Pion(void)" (??1Pion@@QAE@XZ)
+King.obj : error LNK2001: symbole externe non rÚsolu "public: __thiscall Pion::~Pion(void)" (??1Pion@@QAE@XZ)
+Knight.obj : error LNK2001: symbole externe non rÚsolu "public: __thiscall Pion::~Pion(void)" (??1Pion@@QAE@XZ)
+Pawn.obj : error LNK2001: symbole externe non rÚsolu "public: __thiscall Pion::~Pion(void)" (??1Pion@@QAE@XZ)
+C:\Users\jelai\source\repos\12-11-2019\Debug\12-11-2019.exe : fatal error LNK1120: 1 externes non rÚsolus

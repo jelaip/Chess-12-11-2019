@@ -1,4 +1,5 @@
 #pragma once
+#include "Board.h"
 #include "Pion.h"
 #include"Pawn.h"
 #include "Bishop.h"
@@ -9,7 +10,7 @@
 class Joueur
 {
 public:
-	Joueur(bool _black);
+	Joueur(bool _black,Board* board);
 	~Joueur();
 	void fillPionList(std::list<Pion*> &pionList);
 	std::list<Pion*> pionList;

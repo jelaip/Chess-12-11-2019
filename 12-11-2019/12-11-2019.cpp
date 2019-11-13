@@ -5,7 +5,7 @@
 #include <SFML/Graphics.hpp> 
 #include "Board.h"
 #include "windows.h"
-
+#include "Joueur.h"
 
 
 int main()
@@ -16,7 +16,10 @@ int main()
 	
 	// Initialise everything below
 	Board* board = new Board(window.getSize().x);
-	
+	bool tourBlack = false;
+	Joueur* j1 = new Joueur(false);
+	Joueur* j2 = new Joueur(true);
+	sf::Vector2i localPosition;
 	// Game loop
 	while (window.isOpen()) {
 		sf::Event event;
@@ -25,8 +28,12 @@ int main()
 			
 
 
-
 		} // Update game here
+
+		localPosition = sf::Mouse::getPosition(window);
+
+		log(localPosition.x);
+		log(localPosition.y);
 	window.clear(); // Whatever I want to draw goes here
 	for (sf::RectangleShape r : board->caseReel)
 	{
